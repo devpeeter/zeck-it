@@ -21,3 +21,8 @@ jobs:
           backend: 'zaino'
           image_prefix: 'ghcr.io/intellidean/zeckit'
           startup_timeout_minutes: '15'
+
+      - name: 🧪 Run Smoke Test
+        run: |
+          chmod +x smoke_test.sh
+          ./smoke_test.sh
